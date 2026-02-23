@@ -153,7 +153,48 @@
     rime-data
     librime
 
+  ## emacs-app
+    aspell
+    hunspell
+    fortune
+    fortune-kind
+    w3m
+    xmlstarlet
+    xclip
+    pandoc
+    universal-ctags
+    global
+    libreoffice
+    ripgrep
+    sbcl
+    ffmpeg
+    shellcheck
+    mkvtoolnix
+    pdfgrep
+    autoconf
+    automake
+    gcc
+    pkg-config
+    fortune
+    libpng
+    poppler
+    poppler_gi
+    zlib
 
+  ## compress app
+   file-roller
+   _7zz
+   p7zip
+   unrar
+   lz4
+   zstd
+   bzip2
+   brotli
+   pigz
+   lbzip2
+   pbzip2
+   rar
+   unp
 
 
   ];
