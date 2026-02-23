@@ -101,20 +101,70 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     git
+  ## editor
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     neovim
     emacs
     emacs-gtk
+
+  ## base app
+    fzf
+    ripgrep
+    fd # fd-find
+    hstr
+    sd
+    parallel
+    tree
+    lf
+    zoxide
+    autojump
+    bat
+    # python3-argcomplete
+    axel
+    curl
+    wget
+    aria2
+    nettools # net-tools
+    ethtool
+    iftop
+    wpa_supplicant # wpasupplicant
+    trash-cli
+    wirelesstools # wireless-tools
+    arch-install-scripts
+    
+    vim
+    neovim
+    emacs
+    
+    tmux  # 推荐使用 programs.tmux.plugins 声明式管理插件, 而不是用tmux-plugin-manager
+    tmuxinator
+    tmate
+    
+    gnupg
+    gpa
+    pinentry-curses
+    pinentry-tty
+    openssl # libssl-dev
+    cacert  # ca-certificates
+
+    fcitx5
+    fcitx5-rime
+    rime-data
+    librime
+
+
+
+
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+  };
 
   # List services that you want to enable:
 
