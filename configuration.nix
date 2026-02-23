@@ -15,6 +15,16 @@
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
 
+ # 如果是 kvm 虚拟机, 那么可如此设置让 virsh 连接
+  boot.kernelParams = [ "console=ttyS0,115200n8" ];
+
+  # 2. 加上串口服务
+  systemd.services."serial-getty@ttyS0" = {
+    enable = true;
+    wantedBy = [ "multi-user.target" ];
+  };
+
+
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
