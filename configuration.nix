@@ -133,19 +133,14 @@
     # python3-argcomplete
     axel
     curl
-    wget
     aria2
-    nettools # net-tools
+    # nettools # net-tools
     ethtool
     iftop
     wpa_supplicant # wpasupplicant
     trash-cli
     wirelesstools # wireless-tools
     arch-install-scripts
-    
-    vim
-    neovim
-    emacs
     
     tmux  # 推荐使用 programs.tmux.plugins 声明式管理插件, 而不是用tmux-plugin-manager
     tmuxinator
@@ -181,11 +176,7 @@
     shellcheck
     mkvtoolnix
     pdfgrep
-    autoconf
-    automake
-    gcc
     pkg-config
-    fortune
     libpng
     poppler
     poppler_gi
@@ -220,6 +211,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
+  # 如非必要, 本地不要安装启用sshd
   services.openssh.enable = true;
 
   # Open ports in the firewall.
